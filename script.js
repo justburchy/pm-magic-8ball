@@ -1,21 +1,3 @@
-const answers = [
-  // ✅ Positive (5)
-  "Approved. For now.",
-  "Looks good on paper",
-  "Sure… if Dev agrees",
-  "Roadmap says yes",
-  "Yep. Tell no one.",
-
-  // ❓ Non-Committal (3)
-  "Circle back later",
-  "Pending QA sign-off",
-  "Ask Legal. Good luck.",
-
-  // ❌ Negative (2)
-  "Scope says no",
-  "Blocked. Again."
-];
-
 function shakeBall() {
   const question = document.getElementById('question').value.trim();
 
@@ -24,18 +6,18 @@ function shakeBall() {
     return;
   }
 
-  const answers = [
-    "Yes, definitely!",
-    "Ask again later.",
-    "It is certain.",
-    "Reply hazy, try again.",
-    "Don’t count on it.",
-    "Without a doubt.",
-    "Very doubtful.",
-    "Signs point to yes.",
-    "Better not tell you now.",
-    "Concentrate and ask again."
-  ];
+const answers = [
+  "Approved. For now.",
+  "Looks good on paper",
+  "Sure… if Dev agrees",
+  "Roadmap says yes",
+  "Yep. Tell no one.",
+  "Circle back later",
+  "Pending QA sign-off",
+  "Ask Legal. Good luck.",
+  "Scope says no",
+  "Blocked. Again."
+];
 
   const randomAnswer = answers[Math.floor(Math.random() * answers.length)];
   
