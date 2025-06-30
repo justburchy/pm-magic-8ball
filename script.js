@@ -7,16 +7,31 @@ function shakeBall() {
   }
 
 const answers = [
+  // ✅ POSITIVE (10)
   "Approved. For now.",
-  "Looks good on paper",
-  "Sure… if Dev agrees",
-  "Roadmap says yes",
+  "Looks good on paper.",
+  "Sure… if Dev agrees.",
+  "Roadmap says yes.",
   "Yep. Tell no one.",
-  "Circle back later",
-  "Pending QA sign-off",
+  "That's a solid maybe — but yes.",
+  "Green-lit. Run with it!",
+  "You’ve got the budget (for now).",
+  "PM says yes, so it’s law.",
+  "Schedule loves this idea.",
+
+  // ❓ NON-COMMITTAL (5)
+  "Circle back later.",
+  "Pending QA sign-off.",
   "Ask Legal. Good luck.",
-  "Scope says no",
-  "Blocked. Again."
+  "Let’s take this offline.",
+  "Add it to the backlog 🤷‍♂️",
+
+  // ❌ NEGATIVE (5)
+  "Scope says no.",
+  "Blocked. Again.",
+  "Stakeholder veto incoming.",
+  "Budget laughs at you.",
+  "Hard pass. Try Q5."
 ];
 
   const randomAnswer = answers[Math.floor(Math.random() * answers.length)];
